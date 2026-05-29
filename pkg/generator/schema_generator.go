@@ -1016,6 +1016,11 @@ func (g *schemaGenerator) generateAnyOfType(t *schemas.Type, scope nameScope) (c
 	isCycle := false
 	rAnyOf, hasNull := g.resolveRefs(t.AnyOf, false)
 
+	if hasNull && len(rAnyOf) == 1 {
+		rAnyOf[0].Type.Add(schemas.TypeNameNull)
+		return g.generateTypeInline(rAnyOf[0], scope)
+	}
+
 	for i, typ := range rAnyOf {
 		// infer type from base if not set
 		if len(typ.Type) == 0 {
