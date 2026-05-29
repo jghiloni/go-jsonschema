@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/atombender/go-jsonschema/internal/x/text"
+	"github.com/jghiloni/go-jsonschema/internal/x/text"
 )
 
 func TestNewCaser(t *testing.T) {

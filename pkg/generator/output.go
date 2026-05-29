@@ -5,9 +5,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/atombender/go-jsonschema/pkg/cmputil"
-	"github.com/atombender/go-jsonschema/pkg/codegen"
-	"github.com/atombender/go-jsonschema/pkg/schemas"
+	"github.com/jghiloni/go-jsonschema/pkg/cmputil"
+	"github.com/jghiloni/go-jsonschema/pkg/codegen"
+	"github.com/jghiloni/go-jsonschema/pkg/schemas"
 )
 
 type output struct {

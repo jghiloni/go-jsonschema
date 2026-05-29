@@ -5,7 +5,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/atombender/go-jsonschema/pkg/codegen"
+	"github.com/jghiloni/go-jsonschema/pkg/codegen"
 )
 
 const (
